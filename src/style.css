@@ -1,0 +1,8 @@
+.container {
+  margin-left: 0;
+}
+
+.navbar-brand {
+  color: blue !important;
+  font-size: 25px;
+}
