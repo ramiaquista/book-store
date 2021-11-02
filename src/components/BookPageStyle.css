@@ -19,3 +19,11 @@
 .list-group-item > button {
   font-size: 12px;
 }
+
+.form-control {
+  margin-bottom: 2vh;
+}
+
+.form-select {
+  margin-bottom: 2vh;
+}
