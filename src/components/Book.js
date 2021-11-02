@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 import { ListGroup, Button } from 'react-bootstrap';
 
 const Book = (props) => {
-  const { name, id } = props;
+  const { title, id } = props;
   return (
     <ListGroup.Item>
       {id}
       -
-      {name}
+      {title}
       <Button variant="secondary">Remove</Button>
     </ListGroup.Item>
   );
 };
 
 Book.propTypes = {
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
 };
 
