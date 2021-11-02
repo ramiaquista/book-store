@@ -6,7 +6,7 @@ import Book from './Book';
 import './BookPageStyle.css';
 
 const BooksPage = () => {
-  const books = useSelector((state) => state);
+  const books = useSelector((state) => state.booksReducer);
   return (
     <main>
       <section className="books-page">
