@@ -7,13 +7,23 @@ import './BookPageStyle.css';
 
 const BooksPage = () => {
   const books = useSelector((state) => state.booksReducer);
+  const listbook = [];
+  const idbooks = [];
+  books.map((book) => idbooks.push(book[0]));
+  books.map((book) => book[1].map((item) => listbook.push(item)));
+
   return (
     <main>
       <section className="books-page">
         <h1>Books List</h1>
         <ListGroup>
-          {books.map((book) => (
-            <Book key={book.id} id={book.id} author={book.author} title={book.title} />
+          {listbook.map((prop, index) => (
+            <Book
+              key={idbooks[index]}
+              id={idbooks[index]}
+              category={prop.category}
+              title={prop.title}
+            />
           ))}
         </ListGroup>
         <CreateNewBook />
