@@ -23,6 +23,8 @@ const CreateNewBook = () => {
     e.preventDefault();
     if (titleInput && categoryInput) {
       submitBookToStore();
+      setTitleInput('');
+      setCategoryInput('');
     }
   };
 
