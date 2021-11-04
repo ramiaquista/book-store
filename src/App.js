@@ -12,12 +12,13 @@ const App = () => (
       <header>
         <Navbar bg="light" variant="light">
           <Container>
-            <Navbar.Brand href="/">BookStore</Navbar.Brand>
+            <Navbar.Brand href="/">BookStore CMS</Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="/">Books</Nav.Link>
-              <Nav.Link href="/categories">Categories</Nav.Link>
+              <Nav.Link href="/">BOOKS</Nav.Link>
+              <Nav.Link href="/categories">CATEGORIES</Nav.Link>
             </Nav>
           </Container>
+          <i className="fas fa-user" />
         </Navbar>
       </header>
       <Switch>

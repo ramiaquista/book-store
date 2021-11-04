@@ -16,12 +16,32 @@ const Book = (props) => {
 
   return (
     <ListGroup.Item>
-      {title}
-      {'  -  '}
-      {category}
-      <Button variant="secondary" onClick={deleteBookFromStore}>
-        Remove
-      </Button>
+      <div className="data-container">
+        <span className="School-of">{category}</span>
+        <span className="Title Text-Style-6">{title}</span>
+        <span className="Suzanne-Collins">Suzanne Collins</span>
+        <div className="btns-container">
+          <Button variant="secondary">Comments</Button>
+          <Button variant="secondary" onClick={deleteBookFromStore}>
+            Remove
+          </Button>
+          <Button variant="secondary">Edit</Button>
+        </div>
+      </div>
+      <div className="p-container">
+        <div className="Oval-2" />
+        <div className="percentage-container">
+          <span className="-Percent-Complete">64%</span>
+          <span className="Completed Text-Style-9">Completed</span>
+        </div>
+      </div>
+      <div className="chapter-container">
+        <span className="Current-Chapter">Current Chapter</span>
+        <span className="Current-Lesson">Chapter 17</span>
+        <Button variant="primary" className="Update-progress">
+          UPDATE PROGRESS
+        </Button>
+      </div>
     </ListGroup.Item>
   );
 };

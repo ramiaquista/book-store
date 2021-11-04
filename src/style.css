@@ -1,8 +1,64 @@
 .container {
   margin-left: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.navbar {
+  width: auto;
+  height: 5.938rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #ffff !important;
 }
 
 .navbar-brand {
-  color: blue !important;
-  font-size: 25px;
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 3.938rem 0.125rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff !important;
+}
+
+.nav-link {
+  margin: 1.5rem 1.863rem 0.688rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212 !important;
+}
+
+.fas {
+  font-size: 1.3rem;
+  color: #0290ff;
+  margin-right: 5rem;
+  padding: 0.55rem;
+  border: 2px solid #e8e8e8;
+  border-radius: 100%;
+}
+
+body {
+  background-color: #e6e6e6 !important;
+}
+
+.Text-Syle-6 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.375rem;
+  color: #121212;
+  letter-spacing: -0.2px;
+}
+
+.Text-Style-9 {
+  font-family: Roboto, sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
 }

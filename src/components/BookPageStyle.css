@@ -6,18 +6,254 @@
   text-align: center;
 }
 
-.list-group {
-  width: 50%;
-  margin: 5% auto;
-}
-
 .list-group-item {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin: 1.313rem 4.25rem 0.93rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: #fff;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.School-of {
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Title {
+  margin-bottom: 0.5rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  padding-top: 0.25rem;
+}
+
+.Suzanne-Collins {
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .list-group-item > button {
   font-size: 12px;
+}
+
+.btns-container {
+  margin-top: 4vh;
+}
+
+.btns-container > button {
+  padding: 0;
+  background-color: white !important;
+  border: white;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  margin-right: 0.5rem;
+  padding-right: 1.2rem;
+  padding-right: 3vw;
+}
+
+.btns-container > button:hover {
+  color: #4386bf !important;
+  text-decoration: underline;
+}
+
+.p-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4vh;
+  padding-left: 20vw;
+}
+
+.-Percent-Complete {
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Oval-2 {
+  width: 4.55rem;
+  height: 4.55rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 5px solid;
+  border-color: #379cf6;
+}
+
+.Completed {
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.percentage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4vw;
+  padding-right: 15vw;
+  border-left: 1px solid#e8e8e8;
+  margin: 4vh 0;
+}
+
+.Current-Chapter {
+  opacity: 0.5;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Current-Lesson {
+  width: 4.688rem;
+  height: 1.313rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.Update-progress {
+  font-family: Roboto, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.7rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4.25rem;
+}
+
+#book-title {
+  width: 50%;
+  margin: 1.188rem 2.125rem 0 0;
+  padding: 0.813rem 10.688rem 0.813rem 0.63rem;
+  border-radius: 4px;
+  border: solid 1px white;
+  background-color: #fff;
+}
+
+#book-title::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+#book-category::placeholder {
+  margin: 0.438rem 10.438rem 0.25rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+#book-category {
+  width: 25%;
+  margin: 1.188rem 2.125rem 0 0;
+  border-radius: 4px;
+  border: solid 1px white;
+  background-color: #fff;
+}
+
+#add-book {
+  width: 12%;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.806rem 1.375rem;
+}
+
+.Title2 {
+  margin: 1.813rem 32.75rem 1.188rem 4.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
 }
 
 .form-control {

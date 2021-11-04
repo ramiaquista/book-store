@@ -30,25 +30,29 @@ const CreateNewBook = () => {
     <div className="form-container">
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Add new book</Form.Label>
-          <Form.Control
-            value={titleInput}
-            onInput={(e) => setTitleInput(e.target.value)}
-            type="text"
-            required
-            placeholder="Book title"
-          />
-          <Form.Control
-            value={categoryInput}
-            onInput={(e) => setCategoryInput(e.target.value)}
-            type="text"
-            required
-            placeholder="Category"
-          />
+          <Form.Label className="Title2">ADD NEW BOOK</Form.Label>
+          <div className="inputs-container">
+            <Form.Control
+              value={titleInput}
+              onInput={(e) => setTitleInput(e.target.value)}
+              type="text"
+              required
+              placeholder="Book title"
+              id="book-title"
+            />
+            <Form.Control
+              value={categoryInput}
+              onInput={(e) => setCategoryInput(e.target.value)}
+              type="text"
+              required
+              placeholder="Category"
+              id="book-category"
+            />
+            <Button variant="primary" type="submit" id="add-book" onClick={handleSubmit}>
+              ADD BOOK
+            </Button>
+          </div>
         </Form.Group>
-        <Button variant="primary" type="submit" onClick={handleSubmit}>
-          Add
-        </Button>
       </Form>
     </div>
   );

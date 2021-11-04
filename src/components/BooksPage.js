@@ -15,7 +15,6 @@ const BooksPage = () => {
   return (
     <main>
       <section className="books-page">
-        <h1>Books List</h1>
         <ListGroup>
           {listbook.map((prop, index) => (
             <Book
